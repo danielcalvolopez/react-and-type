@@ -1,9 +1,11 @@
 import Todos from "./components/Todos";
 
 const App = () => {
+  const items = ["Hey", "How", "Are", "You?"];
+
   return (
     <div>
-      <Todos />
+      <Todos items={items} />
     </div>
   );
 };
