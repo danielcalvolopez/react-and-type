@@ -1,12 +1,13 @@
 import Todos from "./components/Todos";
+import Todo from "./models/todo";
 
 const App = () => {
-  const items = ["Hey", "How", "Are", "You?"];
+  const todos = [new Todo("Daniel"), new Todo("Marta")];
 
   return (
     <div>
       List:
-      <Todos items={items} />
+      <Todos items={todos} />
     </div>
   );
 };
