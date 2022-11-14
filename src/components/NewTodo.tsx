@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { reset } from "yargs";
 import classes from "./NewTodo.module.css";
 
 const NewTodo: React.FC<{ onAddTodo: (text: string) => void }> = ({
@@ -16,6 +17,7 @@ const NewTodo: React.FC<{ onAddTodo: (text: string) => void }> = ({
     }
 
     onAddTodo(enteredText);
+    todoTextInputRef.current!.value = "";
   };
 
   return (
